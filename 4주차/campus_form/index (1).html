@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>동아리 지원서 제출</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <form class="application-form" id="club-form">
+        <h1>캠퍼스 동아리 지원서</h1>
+        <p class="description">동아리 지원 폼에 오신 걸 환영합니다. 많은 관심 부탁드립니다.</p>
+
+        <fieldset>
+          <legend>학적 정보</legend>
+
+          <label for="student-name">이름</label>
+          <input id="student-name" type="text" placeholder="이름을 입력하세요" />
+
+          <label for="student-id">학번</label>
+          <input id="student-id" type="text" placeholder="학번을 입력하세요" />
+
+          <label for="student-email">이메일</label>
+          <input
+            id="student-email"
+            type="email"
+            placeholder="example@univ.ac.kr"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>지원 정보</legend>
+
+          <label for="club-name">관심 동아리</label>
+          <input id="club-name" type="text" placeholder="동아리 이름을 입력하세요" />
+
+          <label for="part">지원 분야</label>
+          <select id="part">
+            <option>기획</option>
+            <option>디자인</option>
+            <option>홍보</option>
+            <option>개발</option>
+            <option>연구</option>
+
+          </select>
+
+          <label for="reason">지원 이유</label>
+          <textarea
+            id="reason"
+            rows="5"
+            placeholder="지원 동기 및 기대하는 활동을 작성해주세요"
+          ></textarea>
+        </fieldset>
+
+        <button type="submit">지원서 제출</button>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
